@@ -1,0 +1,24 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OtClientBot.WpfControls"
+             xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit" x:Class="OtClientBot.WpfControls.ScriptEditor"
+             mc:Ignorable="d" 
+             d:DesignHeight="314" d:DesignWidth="602">
+    <Grid>
+        <avalonedit:TextEditor HorizontalAlignment="Left" VerticalAlignment="Top" Height="314" Width="602"
+    xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
+
+    Name="scriptEditor"
+
+    FontFamily="Consolas"
+
+    SyntaxHighlighting="Python"
+
+    FontSize="10pt"/>
+                               
+                            
+    </Grid>
+</UserControl>

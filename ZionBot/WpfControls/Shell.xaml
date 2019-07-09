@@ -1,0 +1,16 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OtClientBot"
+             xmlns:PythonConsoleControl="clr-namespace:PythonConsoleControl;assembly=PythonConsoleControl" x:Class="OtClientBot.Shell"
+             mc:Ignorable="d" 
+             d:DesignHeight="286" d:DesignWidth="619">
+
+    <Grid Loaded="ItLoaded">
+
+        <PythonConsoleControl:IronPythonConsoleControl Name="wpfPythonConsole"  HorizontalAlignment="Left" Height="286" VerticalAlignment="Top" Width="609" Margin="10,0,0,0"/>
+
+    </Grid>
+</UserControl>

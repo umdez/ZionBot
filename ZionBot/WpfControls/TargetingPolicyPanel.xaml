@@ -1,0 +1,80 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OtClientBot"
+             xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="OtClientBot.WpfControls.TargetingPolicyPanel"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Width="400" Height="180">
+
+    <UserControl.Resources>
+    </UserControl.Resources>
+
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Margin="5 0 0 0" Grid.Column="0" Content="Creature Name"/>
+                    <Label Grid.Column="1" Content="Action"/>
+                    <Label Grid.Column="2" Content="Targeting Mode"/>
+                    <Label Grid.Column="3" Content="Priority"/>
+                    <Label Grid.Column="4" Content="Delete"/>
+                </Grid>
+
+
+
+
+                <!--<DataGrid Height="158" HeadersVisibility="None" x:Name="lstPolicyList" AutoGenerateColumns="False" GridLinesVisibility="None">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn CanUserResize="False" ClipboardContentBinding="{x:Null}"/>
+                </DataGrid.Columns>
+            </DataGrid>-->
+
+
+
+
+
+
+                <ItemsControl x:Name="lstPolicyList" ItemsSource="{Binding PolicyListSource, Mode=TwoWay}"  AlternationCount="100" >
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <StackPanel.Orientation>Horizontal</StackPanel.Orientation>
+
+
+                                <TextBox  KeyUp="txtCreatureName_KeyUp" IsReadOnly="{Binding isDefault}" Width="112" Text="{Binding name, Mode=TwoWay}" />
+                                <ComboBox Width="57"  ItemsSource="{Binding enumTargetingActions}" SelectedItem="{Binding action, Mode=TwoWay}" />
+                                <ComboBox Width="110" ItemsSource="{Binding enumTargetingModes}" SelectedItem="{Binding targetingMode, Mode=TwoWay}" />
+                                <ComboBox Width="64" ItemsSource="{Binding enumLevelsOfPriority}" SelectedItem="{Binding priority, Mode=TwoWay}" />
+                                <Button   
+                                Tag="{Binding 
+                                    Path=(ItemsControl.AlternationIndex), 
+                                    RelativeSource={RelativeSource Mode=TemplatedParent}, 
+                                    FallbackValue=FAIL, 
+                                    StringFormat={}{0}}"                                
+                                Name="btnRemoveItem" Click="btnRemoveItem_Click"  IsEnabled="{Binding isNotDefault}"  Margin="09 0 0 0"  Width="25">✖</Button>
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+
+
+                </ItemsControl>
+
+
+            </StackPanel>
+
+        </ScrollViewer>
+
+
+    </Grid>
+</UserControl>

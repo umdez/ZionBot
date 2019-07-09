@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="OtClientBot.WpfControls.ScriptingMananger"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OtClientBot.WpfControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="255" d:DesignWidth="619">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+            <StackPanel>
+
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="9*" />
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="13*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontSize="14" Grid.Column="0" Text="Script Name" FontWeight="Bold" />
+                    <TextBlock FontSize="14" Grid.Column="1" Text="Status" FontWeight="Bold"/>
+                    <TextBlock FontSize="14" Grid.Column="2" Text="Actions" FontWeight="Bold"/>
+
+                </Grid>
+
+
+
+
+                <ItemsControl x:Name="lstScriptsList" ItemsSource="{Binding ScriptListSource, Mode=TwoWay}" AlternationCount="100" >
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="9*" />
+                                    <ColumnDefinition Width="3*" />
+                                    <ColumnDefinition Width="13*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Padding="3 0 0 0 " Grid.Column="0" Text="{Binding name}"/>
+                                <TextBlock Grid.Column="1" Text="{Binding status, Mode=OneWay}"/>
+                                <StackPanel Grid.Column="2">
+                                    <StackPanel.Orientation>Horizontal</StackPanel.Orientation>
+                                    <Button Click="btnPlayScript_Click" Tag="{Binding 
+                                    Path=(ItemsControl.AlternationIndex), 
+                                    RelativeSource={RelativeSource Mode=TemplatedParent}, 
+                                    FallbackValue=FAIL, 
+                                    StringFormat={}{0}}"    Name="btnPlayScript" FontSize="11" FontFamily="Segoe UI Symbol" Width="51">▶ Play</Button>
+                                    <Button Click="btnStopScript_Click" Tag="{Binding 
+                                    Path=(ItemsControl.AlternationIndex), 
+                                    RelativeSource={RelativeSource Mode=TemplatedParent}, 
+                                    FallbackValue=FAIL, 
+                                    StringFormat={}{0}}"    Name="btnStopScript" FontSize="11" FontFamily="Segoe UI Symbol" Width="51">◼ Stop</Button>
+                                    <Button Click="btnEditScript_Click"  Tag="{Binding 
+                                    Path=(ItemsControl.AlternationIndex), 
+                                    RelativeSource={RelativeSource Mode=TemplatedParent}, 
+                                    FallbackValue=FAIL, 
+                                    StringFormat={}{0}}"    Name="btnEditScript" FontSize="11" FontFamily="Segoe UI Symbol" Width="51">✎ Edit</Button>
+                                    <Button Click="btnSeeOutputFromScript_Click"  Tag="{Binding 
+                                    Path=(ItemsControl.AlternationIndex), 
+                                    RelativeSource={RelativeSource Mode=TemplatedParent}, 
+                                    FallbackValue=FAIL, 
+                                    StringFormat={}{0}}"    Name="btnSeeOutputFromScript" FontSize="11" FontFamily="Segoe UI Symbol" Width="51">❞ Output</Button>
+                                    <Button Click="btnDeleteScript_Click" Tag="{Binding 
+                                    Path=(ItemsControl.AlternationIndex), 
+                                    RelativeSource={RelativeSource Mode=TemplatedParent}, 
+                                    FallbackValue=FAIL, 
+                                    StringFormat={}{0}}"    Name="btnDeleteScript" FontSize="11" FontFamily="Segoe UI Symbol" Width="51">✖ Delete</Button>
+                                    <Button Click="btnRenameScript_Click"  Tag="{Binding 
+                                    Path=(ItemsControl.AlternationIndex), 
+                                    RelativeSource={RelativeSource Mode=TemplatedParent}, 
+                                    FallbackValue=FAIL, 
+                                    StringFormat={}{0}}"    Name="btnRenameScript" FontSize="11" FontFamily="Segoe UI Symbol" Width="50">Rename</Button>
+
+
+
+                                </StackPanel>
+
+                            </Grid>
+
+
+
+
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+
+
+                </ItemsControl>
+
+
+
+
+            </StackPanel>
+
+        </ScrollViewer>
+
+    </Grid>
+</UserControl>
