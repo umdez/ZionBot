@@ -70,5 +70,5 @@ Estes endereços se encontram no arquivo [Address.cs](https://github.com/Pimente
 
 
 ---
-Agradecimentos espciais ao Nick Cano, que é uma grande refrência na comunidade de Game Hacking e me ajudou com os insights providos no seu livro /Game Hacking: Developing Autonomous Bots for Online Games/
+Agradecimentos espciais ao Nick Cano, que é uma grande refrência na comunidade de Game Hacking e me ajudou com os insights providos no seu livro *Game Hacking: Developing Autonomous Bots for Online Games*.
 
