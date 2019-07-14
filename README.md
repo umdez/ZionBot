@@ -9,7 +9,7 @@ A bot for 𝙼𝚎𝚍𝚒𝚟𝚒𝚊 𝚘𝚗𝚕𝚒𝚗𝚎 that uses contex
 # Introdução
 Este foi um bot que resolvi criar depois de ter feito o [CrystalBot](https://github.com/PimentelM/CrystalBot), que teve um bom sucesso entre as pessoas que o utilizaram e me inspirou à buscar um desafio maior criando um bot para uma versão diferente do jogo.
 
-Ao invés de usar a API do windows para enviar sinais que simulavam a interação com teclado e do mouse, o ZionBot foi projetado para interceptar a execução do código em determinadas áreas do jogo para poder executar suas ações, esta técnica é conhecida como context hooking.
+Ao invés de usar a API do windows para enviar sinais que simulavam a interação com teclado e mouse, o ZionBot foi projetado para interceptar a execução do código em determinadas áreas do jogo para poder executar suas ações, esta técnica é conhecida como context hooking.
 
 O bot também emprega uma engine de execução de scripts em python, que permite que os usuários criem scripts personalizados em python que poderão ser executados em paralelo tendo acesso aos objetos de interação com o jogo. 
 
