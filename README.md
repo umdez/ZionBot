@@ -5,6 +5,7 @@
 # ZionBot
 A bot for 𝙼𝚎𝚍𝚒𝚟𝚒𝚊 𝚘𝚗𝚕𝚒𝚗𝚎 that uses context hooking to interact with the process of the game.
 
+
 # Introdução
 Este foi um bot que resolvi criar depois de ter feito o [CrystalBot](https://github.com/PimentelM/CrystalBot), que teve um bom sucesso entre as pessoas que o utilizaram e me inspirou à buscar um desafio maior criando um bot para uma versão diferente do jogo.
 
@@ -18,6 +19,7 @@ O bot também emprega uma engine de execução de scripts em python, que permite
   * Autoloot
   * Targeting
   * Walker com sistema de waypoints
+  * Video: https://www.youtube.com/watch?v=ZXlHADa9tfY
   
 ##### Scripting em python com àcesso ao:
   * GameMap
@@ -27,6 +29,7 @@ O bot também emprega uma engine de execução de scripts em python, que permite
   * Player
   * ScriptingEngine ( Os scripts tem acesso à própria scripting engine, haha... )
   * Packet ( Para enviar pacotes arbitrários para o servidor do jogo. )
+  * Video¹: https://www.youtube.com/watch?v=kjfLmMMxCnE
   
 ##### Autofishing com detecção automática dos tiles de água  que contém peixes
 ##### Auto eat Food
@@ -73,3 +76,7 @@ Estes endereços se encontram no arquivo [Address.cs](https://github.com/Pimente
 ---
 Agradecimentos espciais ao Nick Cano, que é uma grande refrência na comunidade de Game Hacking e me ajudou com os insights providos no seu livro *Game Hacking: Developing Autonomous Bots for Online Games*.
 
+
+---
+
+¹: No momento em que gravei o vídeo, o envio de pacotes era mais lento pois existia um overhead na técnica que eu utilizava para enviar os pacotes, mas pouco tempo depois eu re-implementei o hook de forma que o envio se tornou instantâneo. Hoje, caso aquele mesmo script fosse executado, todas as moedas apareceriam no chão do jogo instantânemaente.
