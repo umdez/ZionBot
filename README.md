@@ -55,12 +55,8 @@ Muitas horas de engenharia reversa das estruturas de dados e da arquitetura do c
 
 A arquitetura do bot foi inspirada no [YokoInjection](http://yoko.com.ua/eng/injection.htm), um utilitário para Ultima Online que permitia a execução de vários scripts em paralelo para execução de diversas tarefas, como healing, mining, etc...
 
-# Considerações sobre o estado atual do bot:
-O bot ainda está funcional no dia de hoje (14/07/2019), porém é necessário que sejam atualizados os endereços de memória utilizados pelo bot para instalar os hooks e ler os dados existentes no client do jogo.
+As ferramentas utilizadas na criação desse bot foram as seguintes:
 
-Estes endereços se encontram no arquivo [Address.cs](https://github.com/PimentelM/ZionBot/blob/master/ZionBot/Statics/Address.cs)
-
-#### As ferramentas utilizadas nesse projeto foram as seguintes:
 * [IDA Pro](https://www.hex-rays.com/products/ida/)
 * [x64dbg](https://x64dbg.com/#start)
 * [Visual Studio Community Edition](https://visualstudio.microsoft.com/)
@@ -68,6 +64,11 @@ Estes endereços se encontram no arquivo [Address.cs](https://github.com/Pimente
 * [HxD](https://mh-nexus.de/en/hxd/)
 * [Setdllcharacteristics](https://blog.didierstevens.com/2010/10/17/setdllcharacteristics/)
 
+
+## Considerações sobre o estado atual do bot:
+O bot ainda está funcional no dia de hoje (14/07/2019), porém é necessário que sejam atualizados os endereços de memória utilizados pelo bot para instalar os hooks e ler os dados existentes no client do jogo.
+
+Estes endereços se encontram no arquivo [Address.cs](https://github.com/PimentelM/ZionBot/blob/master/ZionBot/Statics/Address.cs)
 
 ---
 Agradecimentos espciais ao Nick Cano, que é uma grande refrência na comunidade de Game Hacking e me ajudou com os insights providos no seu livro *Game Hacking: Developing Autonomous Bots for Online Games*.
