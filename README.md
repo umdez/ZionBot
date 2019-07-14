@@ -4,7 +4,7 @@
 
 # ZionBot
 A bot for 𝙼𝚎𝚍𝚒𝚟𝚒𝚊 𝚘𝚗𝚕𝚒𝚗𝚎 that uses context hooking to interact with the process of the game.
-
+![](Image.png)
 
 # Introdução
 Este foi um bot que resolvi criar depois de ter feito o [CrystalBot](https://github.com/PimentelM/CrystalBot), que teve um bom sucesso entre as pessoas que o utilizaram e me inspirou à buscar um desafio maior criando um bot para uma versão diferente do jogo.
