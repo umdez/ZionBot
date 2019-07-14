@@ -60,14 +60,15 @@ O bot ainda está funcional no dia de hoje (14/07/2019), porém é necessário q
 
 Estes endereços se encontram no arquivo [Address.cs](https://github.com/PimentelM/ZionBot/blob/master/ZionBot/Statics/Address.cs)
 
-# As ferramentas utilizadas nesse projeto foram as seguintes:
-[IDA Pro](https://www.hex-rays.com/products/ida/)
-[x64dbg](https://x64dbg.com/#start)
-[Visual Studio Community Edition](https://visualstudio.microsoft.com/)
-[Cheat Engine](https://www.cheatengine.org/)
-[HxD](https://mh-nexus.de/en/hxd/)
-[setdllcharacteristics](https://blog.didierstevens.com/2010/10/17/setdllcharacteristics/)
+#### As ferramentas utilizadas nesse projeto foram as seguintes:
+* [IDA Pro](https://www.hex-rays.com/products/ida/)
+* [x64dbg](https://x64dbg.com/#start)
+* [Visual Studio Community Edition](https://visualstudio.microsoft.com/)
+* [Cheat Engine](https://www.cheatengine.org/)
+* [HxD](https://mh-nexus.de/en/hxd/)
+* [Setdllcharacteristics](https://blog.didierstevens.com/2010/10/17/setdllcharacteristics/)
 
 
 ---
-Agradecimentos espciais ao Nick Cano, que é uma grande refrência na comunidade de Game Hacking e me ajudou com os insights providos no seu livro /Game Hacking/.
+Agradecimentos espciais ao Nick Cano, que é uma grande refrência na comunidade de Game Hacking e me ajudou com os insights providos no seu livro /Game Hacking: Developing Autonomous Bots for Online Games/
+
